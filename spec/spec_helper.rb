@@ -1,5 +1,7 @@
 require_relative '../config/environment.rb'
 
-RSpec.configure do |config|
+ActiveRecord::Base.connection.migration_context.needs_migration?
 
+RSpec.configure do |config|
+    
 end
